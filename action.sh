@@ -29,7 +29,7 @@ cd ${GITHUB_WORKSPACE}
 hugo version || exit 1
 
 echo '👯 Clone remote repository'
-git clone https://github.com/${REMOTE} ${DEST}
+git clone https://${TOKEN}@github.com/${REMOTE} ${DEST}
 
 echo '🧹 Clean site'
 if [ -d "${DEST}" ]; then
